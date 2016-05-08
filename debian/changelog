@@ -1,0 +1,6 @@
+latex-metropolis (1.1.0-1) unstable; urgency=low
+
+  * Initial packaging, based on local package of 'mtheme' predecessor
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Sun, 08 May 2016 14:05:55 -0500
+

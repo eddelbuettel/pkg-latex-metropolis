@@ -1,0 +1,20 @@
+
+This is local / unofficial Debian package wrapped around the
+'metropolis' theme fro LaTeX -- see https://github.com/matze/mtheme
+
+This package was put together by Dirk Eddelbuettel for entirely personal use.
+
+Copyrights:
+
+usr/share/texmf/latex/tex/metropolis/*
+   Copyright 2015  Matthias Vogelgesang
+
+Licenses:
+
+  metropolis is licensed under CC-BY-SA 4.0 International
+
+Downloads:
+
+  mtheme from GitHub
+
+

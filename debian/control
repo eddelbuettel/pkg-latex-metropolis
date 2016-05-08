@@ -1,0 +1,17 @@
+Source: latex-metropolis
+Section: tex
+Priority: optional
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Build-Depends: debhelper (>= 7.0.0), tex-common
+Standards-Version: 3.9.6
+Homepage: https://github.com/matze/mtheme
+
+Package: latex-metropolis
+Architecture: all
+Depends: ${misc:Depends}, texlive-xetex, texlive-fonts-extra
+Suggests: fonts-fira
+Description: Minimalistic modern theme for LaTeX Beamer
+ This package provides the minimalistic 'metropolis' theme for LaTeX
+ (formerly known as 'mtheme') for presentations made with Beamer. 
+ It can make use of the Fira font (http://mozilla.github.io/Fira/)
+ provided by the (also local/informal) package fonts-fira.

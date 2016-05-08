@@ -1,0 +1,68 @@
+#!/usr/bin/make -f
+#                                                       -*- makefile -*-
+# debian/rules file for the (local!!) Debian/GNU Linux latex-mtheme / latex-metropolis package
+# Copyright (C) 2002 - 2016  Dirk Eddelbuettel <edd@debian.org>
+
+source  := $(shell head -1 debian/changelog | awk '{print $$1}')
+
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+build-stamp:
+	dh_testdir
+        #$(MAKE)
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+        #-$(MAKE) clean
+        #-$(MAKE) distclean
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs 
+        #$(MAKE) prefix=`pwd`/debian/tmp/usr install
+	cp -vax usr `pwd`/debian/latex-metropolis/
+
+# Build architecture-independent files here.
+binary-indep: build install
+#	dh_testversion
+	dh_testdir
+	dh_testroot
+#	dh_installdebconf
+	dh_installdocs
+	dh_installtex
+#	dh_installexamples
+#	dh_installdirs usr/share/lintian/overrides
+#	install -p -m 0644  debian/lintian \
+#                        $(debtmp)/usr/share/lintian/overrides/$(source)
+#	dh_installmenu
+#	dh_installemacsen
+#	dh_installpam
+#	dh_installinit
+#	dh_installcron
+#	dh_installmanpages
+#	dh_installinfo
+#	dh_undocumented
+	dh_installchangelogs
+#	dh_link
+	dh_compress
+	dh_fixperms
+#	dh_suidregister
+	dh_installdeb
+#	dh_perl
+	dh_gencontrol
+#	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: build install
+# We have nothing to do by default.
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install
