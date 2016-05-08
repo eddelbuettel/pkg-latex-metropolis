@@ -11,6 +11,8 @@ as mtheme).
 
 ### Installation
 
+#### Local Build
+
 After cloning the repository run
 
 ```
@@ -28,12 +30,18 @@ cleaning up.  More easily, just run
 and either one of these two will create a `.deb` package containing the
 desired fonts.
 
+#### PPA
+
+The package is available pre-built from my
+[PPA](https://launchpad.net/~edd/+archive/ubuntu/misc) which can be added to
+list of repositories known to `apt` et al the usual way.
+
 ### Status
 
-This is a somewhat ad-hoc package for personal use which I may or may not
-put onto my [PPA](https://launchpad.net/~edd/+archive/ubuntu/misc).
-It takes a shortcut in packaging / building. That is not exactly how
-Debian does things.
+This is a somewhat ad-hoc package for personal use.  It takes a shortcut in
+packaging / building. That is not exactly how Debian does things.  But it
+provides the lovely [Metropolis](https://github.com/matze/mtheme) and that is
+a Good Thing (tm).
 
 ### Author
 

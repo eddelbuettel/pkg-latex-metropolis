@@ -1,3 +1,15 @@
+latex-metropolis (1.1.0-1xenial1) xenial; urgency=low
+
+  * PPA build for Ubuntu 16.04 ("xenial")
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Sun, 08 May 2016 17:15:24 -0500
+
+latex-metropolis (1.1.0-1wily1) wily; urgency=low
+
+  * PPA build for Ubuntu 15.10 ("wily")
+
+ -- Dirk Eddelbuettel <edd@debian.org>  Sun, 08 May 2016 17:14:03 -0500
+
 latex-metropolis (1.1.0-1) unstable; urgency=low
 
   * Initial packaging, based on local package of 'mtheme' predecessor
